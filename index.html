@@ -1,83 +1,150 @@
 <!doctype html>
 <html>
     <head>
-        <title>Denis Griffis' cyber-presence</title>
+        <meta charset="utf-8">
+
+        <title>Denis Newman-Griffis</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+        <!-- Page-specific styles -->
         <link rel="stylesheet" href="styles.css" type="text/css" />
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts.js"></script>
     </head>
+
     <body>
-        <div id="header">
-            <div id="who">Denis R. Griffis</div>
-            <div id="what">
-                PhD Student<br />
-                The Ohio State University<br />
-                <a href="http://cse.osu.edu">Department of Computer Science and Engineering</a>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Denis R Newman-Griffis</a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="resources/CV.pdf">CV</a></li>
+                        <li><a href="https://github.com/drgriffis">GitHub</a></li>
+                        <li><a href="https://scholar.google.com/citations?hl=en&user=Ymkp0TYAAAAJ&view_op=list_works">Google Scholar</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+                            <div id="contact-info" class="dropdown-menu">
+                                <i>Email:</i> newman-griffis [dot] 1 [AT] osu [dot] edu
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="contact">
-                <i>Email:</i> griffis [dot] 30 [AT] osu [dot] edu <br /><i>(remove spaces and substitute characters to get address)</i>
-            </div>
-            <div id="links">
-                <div class="header">Links</div>
-                <a class="link" href="resources/CV.pdf">CV</a>
-                <a class="link" href="https://github.com/drgriffis">GitHub</a>
-                <a class="link" href="https://scholar.google.com/citations?hl=en&user=Ymkp0TYAAAAJ&view_op=list_works">Google Scholar</a>
-                <a class="link" href="http://twitter.com/artificialhaiku">hAIku</a>
-            </div>
-        </div>
-        <div id="moi">
-            <img src="resources/me.jpg" alt="Denis' mug" />
-        </div>
+        </nav>
 
-        <div id="bio">
-            <div id="research-interests">
-                <div class="header">Research interests</div>
-                <p>My two main areas of research are:</p>
-                <ol>
-                    <li>Applying methods from the Natural Language Processing (NLP) field to problems in the clinical health informatics domain, particularly working with clinical text (EHR).</li>
-                    <li>Developing computational methods for generalizable semantic representations.</li>
-                </ol>
-                <p>Other interests include theoretical machine learning, information retrieval, and the ethics of AI.</p>
-                <p>I also translate stories in Russian! One of them (translated as joint work with other students at Carleton College) was <a href="http://www.labirint.ru/books/511955/">published in 2015.</a></p>
-            </div>
-            <div id="brief-bio">
-                <div class="header">Brief Bio</div>
-                <p>
-                    I am a PhD student (2014-<span class="italic" title="Never ask!">???</span>) at Ohio State, in the department of Computer Science and Engineering (CSE).  I'm co-advised by <a href="http://web.cse.ohio-state.edu/~fosler">Dr. Eric Fosler-Lussier</a> (CSE) and <a href="http://www.bmi.osu.edu/~alai/">Dr. Albert Lai</a> (Department of Biomedical Informatics).
-                </p>
-                <p>
-                    I'm currently working as a Pre-Doctoral Fellow with the <a href="http://www.cc.nih.gov/rmd/eb/ebstaff.html">Epidemiology and Biostatistics section</a> of the National Institutes of Health Clinical Center, looking at how we can use NLP techniques to improve the workflow of the Social Security Administration's disability determination process.
-                </p>
+        <div class="container">
+            <div id="research-interests" class="jumbotron">
+                <p class="lead">Natural Language Processing (NLP), Computational Semantics, Biomedical Text Mining, Machine Learning</p>
             </div>
         </div>
 
-        <div id="the-deets">
+        <div id="bio" class="container clearfix">
+            <div class="col-sm-4">
+                <div id="me-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active centered">
+                            <img src="resources/me.jpg" alt="Denis' mug" height="250" width="200" />
+                            <p>Sometimes I look like this</p>
+                        </div>
+                        <div class="item centered">
+                            <img src="resources/sheeeeep.jpg" alt="Denis' mug" height="250" width="200" />
+                            <p>But mostly I look like this</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left" href="#me-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#me-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!--<img src="resources/me.jpg" alt="Denis' mug" height="250" width="200" />-->
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    I am a PhD student (2014-) in the <a href="http://web.cse.ohio-state.edu/slate">Speech and Language Technologies (SLaTe)</a> lab
+                    at The Ohio State University, in the department of Computer Science and Engineering (CSE).
+                    I'm co-advised by <a href="http://web.cse.ohio-state.edu/~fosler">Dr. Eric Fosler-Lussier</a> (CSE) and 
+                    <a href="http://informatics.wustl.edu/research-lab-albert-lai/">Dr. Albert Lai</a> (now at Washington University in St. Louis).
+                </p>
+                <p>
+                    I'm also a Pre-Doctoral Fellow with the Clinical Center of the National Institutes of Health (NIH), as part of the
+                    <a href="http://www.cc.nih.gov/rmd/eb/ebstaff.html">Epidemiology and Biostatistics section</a>.
+                    We're looking at how we can use NLP techniques to improve the workflow of the 
+                    Social Security Administration's disability determination process.
+                </p>
+                <p> 
+                    My research is on learning generalizable semantic representations for words and concepts, and transferring these from
+                    general-domain NLP to biomedicine.  In particular, I'm interested in adapting clinical information extraction methods
+                    to extract information about patient <a href="http://www.who.int/classifications/icf/en/">functioning</a> from EHR free text.
+                </p>
+                <p>
+                    I also translate stories in Russian! One of them (translated as joint work with other students at Carleton College) was 
+                    <a href="http://www.labirint.ru/books/511955/">published in 2015.</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="separator" id="research-sep">
+            Research
+        </div>
+
+        <div id="the-deets" class="container">
             <div id="publications">
-                <div class="header">Peer-Reviewed Publications</div>
+                <h4>Pre-prints</h4>
                 <ul>
                     <li>
-                        <div class="title">A Quantitative and Qualitative Evaluation of Sentence Boundary Detection for the Clinical Domain</div>
-                        <div class="authors">Denis R Griffis, Chaitanya Shivade, Eric Fosler-Lussier, Albert M Lai</div>
-                        <div class="where">Proceedings of the Clinical Research Informatics Conference of the American Medical Association (AMIA CRI).  Pages 88-97.  2016</div>
-                        <div class="resources">
-                            <a href="papers/2016-AMIA-CRI.pdf">PDF</a>
-                            <a href="https://github.com/drgriffis/SBD-Evaluation">Source code</a>
-                            <a href="presentations/2016-AMIA-CRI.pdf">Slides</a>
+                        <div class="title"><a href="https://arxiv.org/pdf/1705.08488.pdf">Second-Order Word Embeddings from Nearest Neighbor Topological Features</a></div>
+                        <div class="authors"><span class="me">Denis Newman-Griffis</span>, Eric Fosler-Lussier</div>
+                        <div class="resources clearfix">
+                            <a class="arxiv" href="https://arxiv.org/pdf/1705.08488.pdf">arXiv</a>
+                            <a class="bib" href="papers/arXiv-1705-08488.bib">BibTex</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Publications</h4>
+                <ul>
+                    <li>
+                        <div class="title"><a href="papers/2017-BioNLP.pdf">Insights into Analogy Completion from the Biomedical Domain</a></div>
+                        <div class="authors"><span class="me">Denis Newman-Griffis</span>, Albert M. Lai, Eric Fosler-Lussier</div>
+                        <div class="where">To appear in <span class="venue">Proceedings of the 16th Workshop on Biomedical Natural Language Processing</span>.  2017</div>
+
+                        <div class="resources clearfix">
+                            <a class="pdf" href="papers/2017-BioNLP.pdf">PDF</a>
+                            <a class="bib" href="papers/2017-BioNLP.bib">BibTex</a>
+                            <a class="source" href="https://github.com/OSU-slatelab/BMASS">Source code</a>
+                            <a class="data" href="http://slate.cse.ohio-state.edu/BMASS">Data</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="papers/2016-AMIA-CRI.pdf">A Quantitative and Qualitative Evaluation of Sentence Boundary Detection for the Clinical Domain</a></div>
+                        <div class="authors"><span class="me">Denis R Griffis</span>, Chaitanya Shivade, Eric Fosler-Lussier, Albert M Lai</div>
+                        <div class="where"><span class="venue">Proceedings of the Clinical Research Informatics Conference of the American Medical Association (AMIA CRI)</span>.  Pages 88-97.  2016</div>
+                        <div class="resources clearfix">
+                            <a class="pdf" href="papers/2016-AMIA-CRI.pdf">PDF</a>
+                            <a class="bib" href="papers/2016-AMIA-CRI.bib">BibTex</a>
+                            <a class="source" href="https://github.com/drgriffis/SBD-Evaluation">Source code</a>
+                            <a class="slides" href="presentations/2016-AMIA-CRI.pdf">Slides</a>
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div id="talks">
-                <div class="header">Invited Talks</div>
+                <h4>Invited Talks</h4>
                 <ul>
                     <li>
                         <div class="title">How to Read <i>War and Peace</i> in 30 Seconds</div>
                         <div class="subtitle"><i>Or:</i> An Introduction to Natural Language Processing</div>
                         <div class="date">September 2, 2015</div>
                         <div class="where"><a href="http://dynamit.com/">Dynamit</a> (Columbus, OH)</div>
-                        <div class="resources">
-                            <a href="presentations/Dynamit-2015.pdf">Slides</a>
+                        <div class="resources clearfix">
+                            <a class="slides" href="presentations/Dynamit-2015.pdf">Slides</a>
                         </div>
                     </li>
                 </ul>
@@ -86,5 +153,14 @@
             <div id="service">
             </div>
         </div>
+
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>-->
+        <!-- Page-specific -->
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>

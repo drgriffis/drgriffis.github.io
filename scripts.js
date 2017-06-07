@@ -10,6 +10,4 @@ $(document).ready(function() {
     $('#links a.link').mouseout(lighten);
     $('.resources a').mouseover(darken);
     $('.resources a').mouseout(lighten);
-
-    $('.resources').append('<div class="clearer"></div>');
 })
