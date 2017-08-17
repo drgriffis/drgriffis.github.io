@@ -181,6 +181,10 @@
 .separator#research-sep {
     background: #e8f8f5;
 }
+.separator#current-class-sep {
+    background: #f9e79f;
+    margin-bottom: 40px;
+}
 
 #me-carousel .carousel-control.right,
 #me-carousel .carousel-control.left {
