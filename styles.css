@@ -121,6 +121,10 @@
     width:55px;
     background: #e8daef;
 }
+#the-deets .resources a.data-wide {
+    width:140px;
+    background: #e8daef;
+}
 #the-deets .resources a.slides {
     width:70px;
     background: #d5f5e3;
