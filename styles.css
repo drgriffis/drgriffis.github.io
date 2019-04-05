@@ -67,6 +67,10 @@
 #the-deets .where .venue {
     font-style: italic;
 }
+#the-deets .pub-notes {
+    font-style: italic;
+    font-size: 0.9em;
+}
 
 #the-deets li {
     /*border: 1px solid #888888;*/
